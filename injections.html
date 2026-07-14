@@ -193,6 +193,16 @@ footer .small{color:var(--muted);font-size:.9rem;margin-top:8px;max-width:46ch}
   a{color:var(--ink);text-decoration:none}
 }
 
+.dl{margin-top:12px}
+.dlrow{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:12px 0;text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .05s}
+.dlrow:hover{border-color:var(--copper);box-shadow:0 4px 14px rgba(38,71,107,.08)}
+.dlrow:active{transform:translateY(1px)}
+.dlrow .pdfbadge{flex:0 0 auto;background:var(--copper-ink);color:#fff;font-family:'Inter';font-weight:700;font-size:.7rem;letter-spacing:.06em;padding:8px 10px;border-radius:8px}
+.dlrow .dlmeta{flex:1 1 auto}
+.dlrow .dlmeta strong{display:block;color:var(--navy);font-family:'Source Serif 4',serif;font-size:1.08rem;line-height:1.2}
+.dlrow .dlmeta span{color:var(--muted);font-size:.86rem}
+.dlrow .dlarrow{flex:0 0 auto;color:var(--copper-ink);font-weight:600;white-space:nowrap}
+
 /* ---- hubs, cards, flows, equipment (stage one additions) ---- */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:16px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 26px;display:flex;flex-direction:column}
@@ -244,6 +254,11 @@ footer .small{color:var(--muted);font-size:.9rem;margin-top:8px;max-width:46ch}
 .eqphoto{margin:14px 0 4px;max-width:640px}
 .eqphoto img{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px}
 .eqphoto figcaption{color:var(--muted);font-size:.9rem;margin-top:8px;line-height:1.4}
+.xrgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:12px}
+.xrfig{margin:0;background:#0d1520;border:1px solid var(--line);border-radius:14px;padding:12px}
+.xrfig img{width:100%;height:auto;display:block;border-radius:8px}
+.xrfig figcaption{color:#c7d3df;font-size:.86rem;margin-top:10px;line-height:1.45}
+.xrfig .step{display:inline-block;font-family:'Inter';font-weight:700;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#E6793F;margin-bottom:4px}
 
 .crossnav{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
 .crossnav a{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;
